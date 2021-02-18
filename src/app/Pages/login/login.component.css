@@ -1,0 +1,74 @@
+.container-fluid {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#7e7e7e5d, #000000b0), url(../../../assets/images/main_login.jpg);
+    background-size: cover;
+    /* El clip path siento que se puede comentar y la vista mejora en el login*/
+    clip-path: circle(57% at 32% 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 17%;
+    color: white;
+}
+
+.card {
+    width: 25rem;
+    position: absolute;
+    top: 32%;
+    left: 59%;
+    text-align: center;
+    border-radius: 2.3rem !important;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.445);
+}
+
+.card h1 {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.card-body form .form-group {
+    margin: 0.1rem;
+}
+
+.card-body form .form-control {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.158);
+    border: 0px;
+}
+
+.card-body form .form-control {
+    background-size: auto 50% !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+}
+
+.card-body form .form-group:nth-child(1) .form-control {
+    background-image: url(../../../assets/images/icons/user.png);
+}
+
+.card-body form .form-group:nth-child(2) .form-control {
+    background-image: url(../../../assets/images/icons/padlock.png);
+}
+
+.card-body form div:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+form button {
+    background-color: #2F51E0;
+}
+
+@media (max-width: 900px) {
+    .container-fluid {
+        background-position-x: -11rem;
+    }
+    .card {
+        top: 36%;
+        left: 5%;
+        max-width: 90vw;
+    }
+}
